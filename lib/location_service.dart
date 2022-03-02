@@ -5,7 +5,7 @@ import 'dart:convert' as convert;
 
 
 class LocationService{
-  final String key = 'AIzaSyBhkF2tsDCvHl61HgGTB2ONm5UYqdBo8mU';
+  final String key = 'your key here';
 
   Future<List<dynamic>> getNearbyPlaces(String input, String location, int radius) async {
     String url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?keyword=$input&location=$location&radius=$radius&key=$key';
